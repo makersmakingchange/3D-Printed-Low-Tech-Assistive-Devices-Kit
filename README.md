@@ -3,7 +3,7 @@
 SUMMARY
  --->
 
-The [3D Printed Low Tech Assistive Devices Kit](https://www.makersmakingchange.com/s/product/3d-printed-low-tech-assistive-devices-kit/01tJR000000690QYAQ) contains devices that support people with disabilities in activities of daily living and learning. These devices assist people with arthritis, limited finger exterity or other disabilities. This kit gives schools a great introduction into the world of 3D printed Assistive Technology (AT).
+The [3D Printed Low Tech Assistive Devices Kit](https://www.makersmakingchange.com/s/product/3d-printed-low-tech-assistive-devices-kit/01tJR000000690QYAQ) is an introduction to 3D printed devices. It is great for OT’s, Not For Profits, or Users who want to trial a few different devices. The assorted devices in this kit can be used for people of all ages. These devices can be altered by size, and colour giving the user flexibility for the devices to be a fit for them.
 
 ## 3D Printed Low Tech Assistive Devices Kit
 ### Summary
