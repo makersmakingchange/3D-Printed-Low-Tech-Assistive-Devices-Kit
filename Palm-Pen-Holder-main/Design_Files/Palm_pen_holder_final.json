@@ -1,0 +1,86 @@
+{
+    "parameterSets": {
+        "small w small pen hole": {
+            "engr_text": "Makers Making Change-S\/S",
+            "hand_width": "93",
+            "lefty": "false",
+            "pen_dia": "7",
+            "pinkie_thick": "21",
+            "strap_width": "23",
+            "thumb_thick": "25"
+        },
+        "small w medium pen hole": {
+            "engr_text": "Makers Making Change-S\/M",
+            "hand_width": "93",
+            "lefty": "false",
+            "pen_dia": "12.5",
+            "pinkie_thick": "21",
+            "strap_width": "23",
+            "thumb_thick": "25"
+        },
+        "large w medium pen hole": {
+            "engr_text": "Makers Making Change-L\/M",
+            "hand_width": "120",
+            "lefty": "false",
+            "pen_dia": "12.5",
+            "pinkie_thick": "33",
+            "strap_width": "25",
+            "thumb_thick": "40"
+        },
+        "large w large pen hole": {
+            "engr_text": "Makers Making Change-L\/L",
+            "hand_width": "120",
+            "lefty": "false",
+            "pen_dia": "18",
+            "pinkie_thick": "33",
+            "strap_width": "25",
+            "thumb_thick": "40"
+        },
+        "small w large pen hole": {
+            "engr_text": "Makers Making Change-S\/L",
+            "hand_width": "93",
+            "lefty": "false",
+            "pen_dia": "18",
+            "pinkie_thick": "21",
+            "strap_width": "23",
+            "thumb_thick": "25"
+        },
+        "medium w medium pen hole": {
+            "engr_text": "Makers Making Change-M\/M",
+            "hand_width": "110",
+            "lefty": "false",
+            "pen_dia": "12.5",
+            "pinkie_thick": "26",
+            "strap_width": "24",
+            "thumb_thick": "35"
+        },
+        "large w small pen hole": {
+            "engr_text": "Makers Making Change-L\/S",
+            "hand_width": "120",
+            "lefty": "false",
+            "pen_dia": "7",
+            "pinkie_thick": "33",
+            "strap_width": "25",
+            "thumb_thick": "40"
+        },
+        "medium w large pen hole": {
+            "engr_text": "Makers Making Change-M\/L",
+            "hand_width": "110",
+            "lefty": "false",
+            "pen_dia": "18",
+            "pinkie_thick": "26",
+            "strap_width": "24",
+            "thumb_thick": "35"
+        },
+        "medium w small pen hole": {
+            "engr_text": "Makers Making Change-M\/S",
+            "hand_width": "110",
+            "lefty": "false",
+            "pen_dia": "7",
+            "pinkie_thick": "26",
+            "strap_width": "24",
+            "thumb_thick": "35"
+        }
+    },
+    "fileFormatVersion": "1"
+}
