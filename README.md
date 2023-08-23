@@ -3,7 +3,7 @@
 SUMMARY
  --->
 
-The 3D Printed Educational Devices kit contains devices that support people with disabilities in activities of daily living and learning. These devices assist people with arthritis, limited finger exterity or other disabilities. This kit gives schools a great introduction into the world of 3D printed Assistive Technology (AT).
+The [3D Printed Educational Devices Kit](https://www.makersmakingchange.com/s/product/3d-printed-low-tech-assistive-devices-kit/01tJR000000690QYAQ)  contains devices that support people with disabilities in activities of daily living and learning. These devices assist people with arthritis, limited finger exterity or other disabilities. This kit gives schools a great introduction into the world of 3D printed Assistive Technology (AT).
 
 ## 3D Printed Low Tech Assistive Devices Kit
 ### Summary
