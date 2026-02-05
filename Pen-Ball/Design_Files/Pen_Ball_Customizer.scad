@@ -54,6 +54,17 @@ height_at_pillar = height_at_radius(ball_diam, pillar_at_radius);
 catch_offset = pillar_at_radius;
 echo(pillar_diam=pillar_diam, pillar_at_radius=pillar_at_radius, height_at_pillar=height_at_pillar, catch_offset=catch_offset);
 
+//engraving variables
+chars = "MAKERS MAKING CHANGE";
+chars2 = "MAKERSMAKINGCHANGE.COM";
+radius = (ball_diam/2)-3;
+myPi = 3.14159;
+chars_per_circle = 40;
+step_angle = 360 / chars_per_circle;
+circumference = 2 * PI * radius;
+char_size = circumference / chars_per_circle;
+char_thickness = 1;
+
 module inprofile() {
     // rather than using a sphere, rotate_extrude a 2D path
     offset(r=-3 * wall_thick/2, $fn=16)difference() {
@@ -133,7 +144,7 @@ module nut_catches() {
     // top screw hole
     translate([0, 0, catch_offset])rotate([90, 0, 90])union() {
         cylinder(d=screw_nom_diam + tol, h=ball_diam, $fn=32);
-        translate([0,0,screw_length])cylinder(d=screw_head_diam + tol, h=ball_diam, $fn=32);
+        translate([0,0,screw_length+1])cylinder(d=screw_head_diam + tol, h=ball_diam, $fn=32);
         // top nut catch
         translate([0,0,(pen_diam + tol + wall_thick) / 2])hull() {
             rotate([0, 0, 30])cylinder(d=nut_diam + tol, h=nut_thick + tol, $fn=6);
@@ -143,7 +154,7 @@ module nut_catches() {
     // bottom screw hole
     translate([0, 0, -catch_offset])rotate([90, 0, 90])union() {
         cylinder(d=screw_nom_diam + tol, h=ball_diam, $fn=32);
-        translate([0,0,screw_length])cylinder(d=screw_head_diam + tol, h=ball_diam, $fn=32);
+        translate([0,0,screw_length+1])cylinder(d=screw_head_diam + tol, h=ball_diam, $fn=32);
         // bottom nut catch
         translate([0,0,(pen_diam + tol + wall_thick) / 2])hull() {
             rotate([0, 0, 30])cylinder(d=nut_diam + tol, h=nut_thick + tol, $fn=6);
@@ -159,7 +170,18 @@ module shell() {
             // the positive bits
             rotate_extrude()profile();  // outer shell
             inside_bits();              // interior detail
-        }
+			}
+			//engraving text
+			for(i = [0 : chars_per_circle - 1]) {
+    rotate(i * step_angle) 
+        translate([0, radius + char_size / 2, 3]) 
+            rotate([90, 0, 180]) linear_extrude(char_thickness) text(
+                chars[i], 
+                font = "Courier New; Style = Bold", 
+                size = char_size, 
+                valign = "center", halign = "center"
+            );
+        }//for (end engraving)
         union() {
             // the negative bits
             screw_holes();              // edge holes
@@ -176,12 +198,34 @@ module slice() {
             difference() {
                 shell();
                 translate([0, 0, -0.6 * ball_diam])cube(1.2 * ball_diam, center=true);
-            }
+                			//engraving text
+			for(i = [0 : chars_per_circle - 1]) {
+    rotate(i * step_angle) 
+        translate([0, radius + char_size / 2, 3]) 
+            rotate([90, 0, 180]) linear_extrude(char_thickness) text(
+                chars[i], 
+                font = "Courier New; Style = Regular", 
+                size = char_size, 
+                valign = "center", halign = "center"
+            );
+        }//for (end engraving)
+				}
         }
         translate([(ball_diam + pen_diam) / 2, 0, 0]) {
             difference() {
                 rotate([180, 0, 0])shell();
                 translate([0, 0, -0.6 * ball_diam])cube(1.2 * ball_diam, center=true);
+							//engraving text
+			for(i = [0 : chars_per_circle - 1]) {
+    rotate(i * step_angle) 
+        translate([0, radius + char_size / 2, 3]) 
+            rotate([90, 0, 180]) linear_extrude(char_thickness) text(
+                chars2[i], 
+                font = "Courier New; Style = Bold", 
+                size = char_size, 
+                valign = "center", halign = "center"
+            );
+        }//for (end engraving)
             }
         }
     }
